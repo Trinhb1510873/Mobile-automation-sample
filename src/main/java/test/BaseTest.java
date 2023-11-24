@@ -102,7 +102,7 @@ public class BaseTest {
 
 	private void startAppiumProgrammatically() {
 		File fileLogLocation = new File(System.getProperty("user.dir") + "/server-logs/" + "server-log-" + getTakenTime() + ".log");
-		if (fileLogLocation.getParentFile().exists()) {
+		if (!fileLogLocation.getParentFile().exists()) {
 			fileLogLocation.getParentFile().mkdirs();
 		}
 		service = new AppiumServiceBuilder()
