@@ -1,0 +1,5 @@
+allure-results/
+.idea/
+screenshots/
+server-logs/
+target/
